@@ -178,3 +178,9 @@ footer {
         gap: 10px;
     }
 }
+
+.contacto:hover {
+    background: #eef2ff;
+    transform: scale(1.01);
+    transition: 0.2s;
+}
