@@ -86,7 +86,7 @@ function verContacto(indice) {
 }
 
 function eliminarContacto(indice) {
-    const confirmar = confirm("¿Desea eliminar este contacto?");
+    const confirmar = confirm("¿Está seguro de eliminar este contacto de la agenda?");
 
     if (confirmar) {
         contactos.splice(indice, 1);
