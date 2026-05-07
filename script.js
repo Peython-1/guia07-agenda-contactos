@@ -18,6 +18,11 @@ formContacto.addEventListener("submit", function(evento) {
         return;
     }
 
+    if (nombre.length < 3) {
+        mostrarMensaje("El nombre debe tener al menos 3 caracteres.", "error");
+        return;
+    }
+
     if (!validarCorreo(correo)) {
         mostrarMensaje("Ingrese un correo válido.", "error");
         return;
