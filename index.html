@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contactos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Agenda de Contactos</h1>
+        <p>Aplicación web para registrar, visualizar y eliminar contactos.</p>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="tarjeta">
+            <h2>Registrar Contacto</h2>
+
+            <form id="formContacto">
+                <div class="grupo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Ingrese el nombre">
+                </div>
+
+                <div class="grupo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" placeholder="Ingrese el teléfono">
+                </div>
+
+                <div class="grupo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" placeholder="ejemplo@correo.com">
+                </div>
+
+                <button type="submit">Guardar contacto</button>
+
+                <p id="mensaje"></p>
+            </form>
+        </section>
+
+        <section class="tarjeta">
+            <div class="titulo-lista">
+                <h2>Lista de Contactos</h2>
+                <span id="contador">0 contactos</span>
+            </div>
+
+            <div id="listaContactos" class="lista-contactos">
+                <!-- Los contactos aparecerán aquí -->
+            </div>
+        </section>
+
+        <section class="tarjeta detalle">
+            <h2>Información del Contacto</h2>
+            <p id="detalleContacto">Seleccione un contacto para visualizar su información.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Guía 07 - Git y GitHub</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

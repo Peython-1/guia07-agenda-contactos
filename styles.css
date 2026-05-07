@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef2f7;
+    color: #1f2937;
+}
+
+header {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    display: grid;
+    gap: 20px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+}
+
+.tarjeta h2 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.grupo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#mensaje {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.correcto {
+    color: #15803d;
+}
+
+.error {
+    color: #dc2626;
+}
+
+.titulo-lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contador {
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.lista-contactos {
+    margin-top: 15px;
+    display: grid;
+    gap: 12px;
+}
+
+.contacto {
+    border: 1px solid #dbeafe;
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.contacto h3 {
+    color: #1e3a8a;
+    margin-bottom: 5px;
+}
+
+.contacto p {
+    margin-bottom: 5px;
+}
+
+.acciones {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.btn-ver {
+    background: #16a34a;
+}
+
+.btn-ver:hover {
+    background: #15803d;
+}
+
+.btn-eliminar {
+    background: #dc2626;
+}
+
+.btn-eliminar:hover {
+    background: #b91c1c;
+}
+
+.detalle p {
+    background: #f8fafc;
+    border-left: 4px solid #2563eb;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #4b5563;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    .titulo-lista {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
