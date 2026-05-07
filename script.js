@@ -49,6 +49,12 @@ formContacto.addEventListener("submit", function(evento) {
 function mostrarContactos() {
     listaContactos.innerHTML = "";
 
+    if (contactos.length === 0) {
+        listaContactos.innerHTML = "<p>No hay contactos registrados.</p>";
+        contador.textContent = "0 contactos";
+        return;
+    }
+
     contactos.forEach(function(contacto, indice) {
         const tarjeta = document.createElement("div");
         tarjeta.classList.add("contacto");
@@ -69,7 +75,6 @@ function mostrarContactos() {
 
     contador.textContent = contactos.length + " contactos";
 }
-
 function verContacto(indice) {
     const contacto = contactos[indice];
 
